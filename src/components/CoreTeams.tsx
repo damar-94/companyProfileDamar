@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Navbar from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
 import Loading from "@/components/Loading";
 
 interface CoreTeamMember {
