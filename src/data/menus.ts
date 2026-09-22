@@ -28,7 +28,7 @@ export const menus: Menu[] = [
     title: "Artisan Sourdough & Rustic Breads",
     description:
       "Naturally leavened sourdough loaves and crusty rustic breads baked fresh daily.",
-    icon: "/icons/service2.png",
+    icon: "/icons/service6.png",
     price: "$8 - $14 / loaf",
     testimonial: {
       quote: "Best sourdough in town—unmatched crust.",
@@ -40,7 +40,7 @@ export const menus: Menu[] = [
     title: "Classic French Pastries",
     description:
       "Butter-rich croissants, pain au chocolat, and delicate choux pastries baked every morning.",
-    icon: "/icons/service5.png",
+    icon: "/icons/service7.png",
     price: "$4.50 - $7.50 / piece",
     testimonial: {
       quote: "Light, flaky, and genuinely authentic.",
@@ -64,7 +64,7 @@ export const menus: Menu[] = [
     title: "Fruit Tarts & Savory Pies",
     description:
       "Crisp pastry shells filled with fresh seasonal fruits, rich custard, or savory meats.",
-    icon: "/icons/service3.png",
+    icon: "/icons/service5.png",
     price: "$35 - $50 (Full Size)",
     testimonial: {
       quote: "Perfect balance of fresh fruit and custard.",
