@@ -2,15 +2,15 @@ import { services } from "@/data/services";
 
 export function Services() {
   return (
-    <section className="relative overflow-hidden bg-[#1E293B] px-6 py-16 sm:px-8 lg:px-20 lg:py-20">
+    <section className="relative overflow-hidden bg-[#1E293B] px-6 py-16 md:px-20 md:py-20">
       <div className="mx-auto max-w-7xl">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight text-[#EAB308] sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-[#EAB308] md:text-4xl">
             What We Can Offer You
           </h2>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-x-12 gap-y-12 sm:grid-cols-2 lg:mt-10 lg:grid-cols-3 lg:gap-x-16 lg:gap-y-10">
+        <div className="mt-12 grid grid-cols-1 gap-x-12 gap-y-12  md:mt-10 md:grid-cols-3 md:gap-x-16 md:gap-y-10">
           {services.map((service) => (
             <article
               key={service.id}
@@ -25,11 +25,11 @@ export function Services() {
                 />
               </div>
 
-              <h3 className="mt-4 text-base font-bold text-white sm:text-lg">
+              <h3 className="mt-4 text-base font-bold text-white md:text-[20px]">
                 {service.title}
               </h3>
 
-              <p className="mt-3 max-w-xs text-sm leading-6 text-slate-300">
+              <p className="mt-3 max-w-xs text-sm leading-6 text-slate-300 md:text-[16px]">
                 {service.description}
               </p>
             </article>

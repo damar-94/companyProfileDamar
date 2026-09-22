@@ -3,7 +3,7 @@ export function Footer() {
   return (
     <footer className="w-full bg-slate-100 px-6 py-12">
       <div className="mx-auto flex max-w-5xl flex-col items-center">
-        <div className="space-y-1 text-center text-sm sm:text-base">
+        <div className="space-y-1 text-center text-sm md:text-base">
           <p>
             <span className="font-semibold text-slate-600">Address:</span>
           </p>

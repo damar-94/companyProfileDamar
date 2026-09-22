@@ -78,7 +78,7 @@ export default function CoreTeams() {
 
   return (
     <div className="flex flex-col">
-      <main className="grow bg-white py-12 px-4 sm:px-6 lg:px-8">
+      <main className="grow bg-white py-12 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-[#EAB308] text-center py-2 rounded-2xl bg-[#1E293B]">
@@ -103,11 +103,11 @@ export default function CoreTeams() {
                 <h3 className="text-xl font-bold text-[#1E293B]">
                   {member.name}
                 </h3>
-                <span className="text-sm font-semibold text-[#1E293B] mb-3">
+                <span className="text-[18px] font-semibold text-[#1E293B] mb-3">
                   {member.role}
                 </span>
 
-                <p className="text-xs text-slate-600 leading-relaxed mb-4 px-2">
+                <p className="text-[16px] text-slate-600 leading-relaxed mb-4 px-2">
                   {member.bio}
                 </p>
               </div>

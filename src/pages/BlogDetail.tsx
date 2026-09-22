@@ -50,13 +50,13 @@ function BlogDetail() {
       <Navbar />
 
       <main>
-        <section className="bg-[#EAB308] px-6 py-16 sm:px-8 lg:px-20">
+        <section className="bg-[#EAB308] px-6 py-16 md:px-20">
           <div className="mx-auto max-w-5xl">
             <span className="inline-block rounded-full bg-[#1E293B] px-4 py-1.5 text-sm font-semibold uppercase tracking-wide text-white">
               {blog?.category}
             </span>
 
-            <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-tight tracking-tight text-slate-900 md:text-6xl">
               {blog?.title}
             </h1>
 
@@ -70,26 +70,26 @@ function BlogDetail() {
           </div>
         </section>
 
-        <article className="mx-auto max-w-5xl px-6 py-12 sm:px-8 lg:px-20">
+        <article className="mx-auto max-w-5xl px-6 py-12 md:px-20">
           {blog?.thumbnail && (
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
                 src={blog.thumbnail}
                 alt={blog.title}
-                className="h-62.5 w-full object-cover sm:h-[400px] lg:h-[500px]"
+                className="h-62.5 w-full object-cover md:h-[500px]"
               />
             </div>
           )}
 
           <div className="mx-auto mt-10 max-w-3xl">
-            <p className="text-xl font-medium leading-8 text-slate-700 sm:text-2xl">
+            <p className="text-xl font-medium leading-8 text-slate-700 md:text-2xl">
               {blog?.description}
             </p>
 
             <div className="my-8 h-px bg-slate-200" />
 
             <div className="prose prose-slate max-w-none">
-              <p className="text-base leading-8 text-slate-700 sm:text-lg">
+              <p className="text-base leading-8 text-slate-700 md:text-lg">
                 {blog?.content}
               </p>
             </div>

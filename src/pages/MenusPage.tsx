@@ -9,13 +9,13 @@ export function MenusPage() {
     <div>
       <Navbar />
 
-      <section className="relative overflow-hidden bg-[#1E293B] md:bg-[url('/cake4.jpg')] bg-cover px-6 py-16 sm:px-8 lg:px-20 lg:py-20">
+      <section className="relative overflow-hidden bg-[#1E293B] md:bg-[url('/cake4.jpg')] bg-cover px-6 py-16 md:px-20 md:py-20">
         <div className="mx-auto max-w-7xl bg-slate-300 p-4 rounded-2xl">
           <h2 className="text-3xl font-bold text-[#EAB308] text-center py-2 rounded-2xl bg-[#1E293B]">
             Our Menu
           </h2>
 
-          <div className="mt-12 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 ">
+          <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-3 ">
             {menus.map((menu) => (
               <article
                 key={menu.id}

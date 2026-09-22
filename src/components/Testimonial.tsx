@@ -11,7 +11,7 @@ import { testimonials } from "@/data/testimonials";
 
 export function Testimonials() {
   return (
-    <section className="relative overflow-hidden bg-[#f4f6ff] px-6 py-16 sm:px-8 lg:px-20 lg:py-20">
+    <section className="relative overflow-hidden bg-[#f4f6ff] px-6 py-16 md:px-20 md:py-20">
       <div className="mx-auto max-w-7xl">
         <Carousel
           opts={{
@@ -22,23 +22,23 @@ export function Testimonials() {
         >
           <div className="relative mb-10 flex items-end justify-between gap-8">
             <div className="max-w-xl">
-              <h2 className="text-3xl font-bold tracking-tight text-[#131625] sm:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight text-[#131625] md:text-4xl">
                 What Our Customers Say
               </h2>
 
-              <p className="mt-4 max-w-lg text-sm leading-7 text-[#484b59] sm:text-base">
+              <p className="mt-4 max-w-lg text-sm leading-7 text-[#484b59] md:text-[16px]">
                 Explore the authentic sentiments and experiences of our
                 customers as they share their thoughts and satisfaction.
               </p>
             </div>
 
-            <div className="hidden gap-3 sm:flex">
+            <div className="hidden gap-3 md:flex">
               <CarouselPrevious className="static translate-y-0 border-[#1E293B] text-[#1E293B] hover:bg-[#1E293B] hover:text-white" />
               <CarouselNext className="static translate-y-0 border-[#1E293B] text-[#1E293B] hover:bg-[#1E293B] hover:text-white" />
             </div>
           </div>
 
-          <div className="mb-6 flex gap-3 sm:hidden">
+          <div className="mb-6 flex gap-3 md:hidden">
             <CarouselPrevious className="static translate-y-0 border-[#1E293B] text-[#1E293B] hover:bg-[#1E293B] hover:text-white" />
             <CarouselNext className="static translate-y-0 border-[#1E293B] text-[#1E293B] hover:bg-[#1E293B] hover:text-white" />
           </div>
@@ -51,8 +51,8 @@ export function Testimonials() {
               >
                 <article className="h-full overflow-hidden rounded-2xl bg-white shadow-sm">
                   {/* Quote */}
-                  <div className="min-h-[170px] px-6 py-7 sm:min-h-[180px]">
-                    <p className="text-sm leading-7 text-[#4a4c57]">
+                  <div className="min-h-[170px] px-6 py-7 md:min-h-[180px]">
+                    <p className="text-[16px] leading-7 text-[#4a4c57]">
                       {testimonial.quote}
                     </p>
                   </div>

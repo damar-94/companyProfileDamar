@@ -37,7 +37,7 @@ function LoginPage() {
       });
 
       alert("Login Success!");
-      navigate("/");
+      navigate("/blogpage");
     } catch (error) {
       console.log(error);
       alert("Login Failed!");

@@ -63,7 +63,7 @@ function CreateBlog() {
         thumbnail: response.data.fileURL,
       });
 
-      alert("Create blog success");
+      alert("Create Article success");
 
       navigate("/blogpage");
     } catch (error) {
@@ -81,7 +81,7 @@ function CreateBlog() {
             Create Article
           </h2>
 
-        <Card className="w-full sm:max-w-md bg-white mt-4">
+        <Card className="w-full md:max-w-md bg-white mt-4">
           <CardHeader>
             <CardDescription></CardDescription>
           </CardHeader>

@@ -31,38 +31,38 @@ function BlogPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black/60 bg-[url('/cake3.jpg')] bg-cover bg-blend-multiply">
+    <div className="min-h-screen bg-[#1E293B]/60 bg-[url('/cake3.jpg')] bg-cover bg-blend-multiply">
       <Navbar />
 
-      <section className="bg-[#EAB308] px-6 py-10 sm:px-8 lg:px-20">
+      <section className="bg-slate-300 px-6 py-10 md:px-20">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-slate-700">
+            <p className="text-sm font-semibold uppercase tracking-widest text-[#1E293B]">
               Blog
             </p>
 
-            <h1 className="mt-1 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+            <h1 className="mt-1 text-4xl font-bold tracking-tight text-[#1E293B] md:text-5xl">
               Articles
             </h1>
 
-            <p className="mt-2 max-w-xl text-slate-700">
+            <p className="mt-2 max-w-xl text-[#1E293B]">
               Discover our latest articles, tips, and insights.
             </p>
           </div>
 
           <div>
             {user ? (
-              <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+              <div className="flex flex-col gap-4 md:flex-row md:items-center">
                 <div className="rounded-xl bg-white/80 px-5 py-3 shadow-sm">
                   <p className="text-sm text-slate-600">Welcome back,</p>
 
-                  <h2 className="font-bold text-slate-900">{user.name}</h2>
+                  <h2 className="font-bold text-[#1E293B]">{user.name}</h2>
                 </div>
 
                 <div className="flex gap-2">
                   <Link to="/createblog">
-                    <Button className="bg-slate-900 text-white hover:bg-slate-300">
-                      Create Blog
+                    <Button className="bg-[#1E293B] text-white hover:bg-[#EAB308] hover:text-[#1E293B]">
+                      Create Article
                     </Button>
                   </Link>
 
@@ -77,7 +77,7 @@ function BlogPage() {
               </div>
             ) : (
               <Link to="/login">
-                <Button className="bg-slate-900 px-6 text-white hover:bg-slate-800">
+                <Button className="bg-[#1E293B] text-white hover:bg-[#EAB308] hover:text-[#1E293B]">
                   Login Here
                 </Button>
               </Link>
@@ -86,13 +86,13 @@ function BlogPage() {
         </div>
       </section>
 
-      <main className="mx-auto max-w-7xl px-6 py-12 sm:px-8 lg:px-20">
+      <main className="mx-auto max-w-7xl px-6 py-12 md:px-20">
         {isLoading ? (
           <div className="flex h-100 items-center justify-center">
             <Loading />
           </div>
         ) : (
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {blogs.map((blog) => {
               return (
                 <Link
@@ -100,14 +100,14 @@ function BlogPage() {
                   to={`/blogs/${blog.objectId}`}
                   className="group"
                 >
-                  <article className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-slate-300 hover:shadow-xl">
+                  <article className="flex h-full flex-col rounded-2xl border border-slate-200 bg-slate-300 p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-slate-300 hover:shadow-xl">
                     <div className="mb-4">
-                      <span className="rounded-full bg-yellow-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-yellow-800">
+                      <span className="rounded-full bg-[#1E293B] px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[#EAB308]">
                         {blog.category}
                       </span>
                     </div>
 
-                    <h2 className="text-xl font-bold text-slate-900 transition-colors group-hover:text-yellow-600">
+                    <h2 className="text-xl font-bold text-[#1E293B]transition-colors group-hover:text-[#EAB308]">
                       {blog.title}
                     </h2>
 
@@ -116,7 +116,7 @@ function BlogPage() {
                     </p>
 
                     <div className="mt-6 border-t border-slate-100 pt-4">
-                      <p className="text-sm font-medium text-slate-900">
+                      <p className="text-sm font-medium text-[#1E293B]">
                         By {blog.author}
                       </p>
 

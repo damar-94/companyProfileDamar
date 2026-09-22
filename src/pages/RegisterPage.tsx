@@ -4,14 +4,14 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useState } from "react";
 import { axiosInstance } from "@/lib/axios";
-import { Link } from "react-router";
-
+import { Link, useNavigate } from "react-router";
 
 function RegisterPage() {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const navigate = useNavigate();
 
   const handleSubmit = async () => {
     setIsLoading(true);
@@ -22,6 +22,7 @@ function RegisterPage() {
         password,
       });
       alert("register success!");
+      navigate("/login");
     } catch (error) {
       console.log(error);
       alert("register failed");
@@ -56,9 +57,7 @@ function RegisterPage() {
             className="bg-slate-300 text-[#1E293B] hover:bg-[#EAB308] mt-10"
             disabled={isLoading}
           >
-            <Link to="/login">
-            {isLoading ? "Loading" : "Login"}
-            </Link>
+            <Link to="/login">{isLoading ? "Loading" : "Login"}</Link>
           </Button>
         </div>
       </section>
