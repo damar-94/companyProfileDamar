@@ -1,11 +1,11 @@
+import BlogNotFound from "@/components/BlogNotFound";
 import { Footer } from "@/components/Footer";
 import Loading from "@/components/Loading";
 import Navbar from "@/components/Navbar";
-import { Button } from "@/components/ui/button";
 import { axiosInstance } from "@/lib/axios";
 import type { Blog } from "@/types/blog";
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router";
+import { useParams } from "react-router";
 
 function BlogDetail() {
   const params = useParams();
@@ -31,8 +31,8 @@ function BlogDetail() {
 
   if (isLoading) {
     return (
-      <div className="flex h-100 items-center justify-center">
-        <Loading/>
+      <div className="flex h-screen items-center justify-center bg-slate-300">
+        <Loading />
       </div>
     );
   }
@@ -40,10 +40,7 @@ function BlogDetail() {
   if (!blog) {
     return (
       <div>
-        <p>Blog not Found</p>
-        <Link to="/">
-          <Button>Go to Homepage</Button>
-        </Link>
+        <BlogNotFound />
       </div>
     );
   }
